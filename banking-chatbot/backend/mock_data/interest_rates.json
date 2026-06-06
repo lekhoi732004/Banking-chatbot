@@ -1,0 +1,65 @@
+{
+  "tiet_kiem": {
+    "online": {
+      "1_thang": 3.1,
+      "3_thang": 3.4,
+      "6_thang": 4.1,
+      "9_thang": 4.1,
+      "12_thang": 5.0,
+      "18_thang": 5.3,
+      "24_thang": 5.3,
+      "36_thang": 5.5
+    },
+    "tai_quay": {
+      "1_thang": 2.9,
+      "3_thang": 3.2,
+      "6_thang": 3.9,
+      "9_thang": 3.9,
+      "12_thang": 4.8,
+      "18_thang": 5.1,
+      "24_thang": 5.1,
+      "36_thang": 5.3
+    },
+    "khong_ky_han": 0.2
+  },
+  "cho_vay": {
+    "mua_nha": {
+      "nam_dau": 6.5,
+      "tu_nam_2": 9.5,
+      "mo_ta": "Vay mua nhà ở, căn hộ, đất ở - Thời hạn vay tối đa 30 năm",
+      "bien_do": 3.0
+    },
+    "mua_xe": {
+      "nam_dau": 7.0,
+      "tu_nam_2": 10.0,
+      "mo_ta": "Vay mua xe ô tô mới hoặc đã qua sử dụng - Thời hạn vay tối đa 8 năm",
+      "bien_do": 3.5
+    },
+    "tieu_dung": {
+      "nam_dau": 8.0,
+      "tu_nam_2": 11.5,
+      "mo_ta": "Vay tiêu dùng có tài sản đảm bảo - Thời hạn vay tối đa 15 năm",
+      "bien_do": 4.0
+    },
+    "tin_chap": {
+      "co_dinh": 12.0,
+      "mo_ta": "Vay tín chấp không tài sản đảm bảo - Thời hạn vay tối đa 5 năm"
+    }
+  },
+  "the_tin_dung": {
+    "lai_suat_tieu_dung": 18.96,
+    "lai_suat_rut_tien_mat": 24.0,
+    "lai_suat_tra_gop": {
+      "0_phan_tram": "Áp dụng tại đối tác liên kết",
+      "thong_thuong": 18.0
+    },
+    "lai_suat_phat_tra_cham": "150% lãi suất dư nợ trong hạn"
+  },
+  "tai_khoan_thanh_toan": {
+    "lai_suat_so_du": 0.2,
+    "mo_ta": "Lãi suất tính trên số dư cuối ngày của tài khoản thanh toán"
+  },
+  "updated_at": "2026-06-04",
+  "don_vi": "%/năm",
+  "ghi_chu": "Lãi suất có thể thay đổi theo chính sách ngân hàng và chỉ đạo của Ngân hàng Nhà nước Việt Nam. Liên hệ ngân hàng để biết lãi suất chính xác tại thời điểm giao dịch."
+}

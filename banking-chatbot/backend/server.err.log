@@ -1,0 +1,109 @@
+INFO:     Will watch for changes in these directories: ['C:\\Lekhoi_AI\\banking-chatbot\\backend']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [14328] using WatchFiles
+INFO:     Started server process [10200]
+INFO:     Waiting for application startup.
+00:26:19 | INFO     | app.main                       | ============================================================
+00:26:19 | INFO     | app.main                       | VietBank AI Chatbot — Starting up...
+00:26:19 | INFO     | app.main                       | ============================================================
+00:26:19 | INFO     | app.services.llm_service       | Initializing Embeddings: bge-m3 at http://localhost:11434
+00:26:19 | INFO     | app.services.llm_service       | Embeddings initialized successfully
+00:26:19 | INFO     | app.services.rag_service       | Loaded existing ChromaDB with 142 documents
+00:26:19 | INFO     | app.main                       | RAG pipeline initialized
+00:26:19 | INFO     | app.main                       | Interest rate data loaded
+00:26:19 | INFO     | app.main                       | ============================================================
+00:26:19 | INFO     | app.main                       | Server ready! Open http://localhost:8000 in your browser
+00:26:19 | INFO     | app.main                       | ============================================================
+INFO:     Application startup complete.
+INFO:     ('127.0.0.1', 51521) - "WebSocket /ws/chat/af709029-1215-4e7b-a7b2-4749dcaf4a6e" [accepted]
+00:26:22 | INFO     | app.main                       | WebSocket connected: session=af709029-1215-4e7b-a7b2-4749dcaf4a6e
+INFO:     connection open
+00:26:46 | INFO     | app.core.orchestrator          | Processing message from session codex-test-6: M\u1edf tài kho\u1ea3n c\u1ea7n gi\u1ea5y t\u1edd gì?...
+00:26:46 | INFO     | app.core.context_manager       | Creating new session: codex-test-6
+00:26:46 | INFO     | app.core.intent_classifier     | Intent classified by keywords: tu_van_mo_tai_khoan
+00:26:46 | INFO     | app.core.orchestrator          | Detected intent: tu_van_mo_tai_khoan
+00:26:49 | INFO     | httpx                          | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+00:26:49 | INFO     | app.services.llm_service       | Initializing LLM: qwen3:4b at http://localhost:11434
+00:26:49 | INFO     | app.services.llm_service       | LLM initialized successfully
+00:26:51 | INFO     | httpx                          | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+00:27:11 | WARNING  | app.services.rag_service       | RAG response generation returned empty text
+00:27:42 | INFO     | app.main                       | WebSocket disconnected: session=af709029-1215-4e7b-a7b2-4749dcaf4a6e
+INFO:     connection closed
+INFO:     ('127.0.0.1', 57512) - "WebSocket /ws/chat/049981a0-4152-4cac-badc-1c40c05febd6" [accepted]
+00:29:30 | INFO     | app.main                       | WebSocket connected: session=049981a0-4152-4cac-badc-1c40c05febd6
+INFO:     connection open
+00:29:33 | INFO     | app.main                       | [049981a0-4152-4cac-badc-1c40c05febd6] User: Lãi su\u1ea5t ti\u1ebft ki\u1ec7m...
+00:29:33 | INFO     | app.core.orchestrator          | Processing message from session 049981a0-4152-4cac-badc-1c40c05febd6: Lãi su\u1ea5t ti\u1ebft ki\u1ec7m...
+00:29:33 | INFO     | app.core.context_manager       | Creating new session: 049981a0-4152-4cac-badc-1c40c05febd6
+00:29:33 | INFO     | app.core.intent_classifier     | Intent classified by keywords: tra_cuu_lai_suat
+00:29:33 | INFO     | app.core.orchestrator          | Detected intent: tra_cuu_lai_suat
+00:29:34 | INFO     | httpx                          | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+00:29:54 | WARNING  | app.core.response_generator    | API response generation returned empty text; using raw data fallback
+00:29:54 | INFO     | app.main                       | [049981a0-4152-4cac-badc-1c40c05febd6] Bot (tra_cuu_lai_suat): D\u1ea1, em có d\u1eef li\u1ec7u cho anh/ch\u1ecb \u0111ây \u1ea1:
+
+\U0001f4ca Bi\u1ec3u lãi su\u1ea5t VietBank — C\u1eadp nh\u1eadt: 2026-...
+00:30:29 | INFO     | app.main                       | [049981a0-4152-4cac-badc-1c40c05febd6] User: vay v\u1ed1n bây gi\u1edd lãi su\u1ea5t là bao nhiêu?...
+00:30:29 | INFO     | app.core.orchestrator          | Processing message from session 049981a0-4152-4cac-badc-1c40c05febd6: vay v\u1ed1n bây gi\u1edd lãi su\u1ea5t là bao nhiêu?...
+00:30:29 | INFO     | app.core.intent_classifier     | Intent classified by keywords: tra_cuu_lai_suat
+00:30:29 | INFO     | app.core.orchestrator          | Detected intent: tra_cuu_lai_suat
+00:30:31 | INFO     | httpx                          | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+00:30:51 | WARNING  | app.core.response_generator    | API response generation returned empty text; using raw data fallback
+00:30:51 | INFO     | app.main                       | [049981a0-4152-4cac-badc-1c40c05febd6] Bot (tra_cuu_lai_suat): D\u1ea1, em có d\u1eef li\u1ec7u cho anh/ch\u1ecb \u0111ây \u1ea1:
+
+\U0001f4ca Bi\u1ec3u lãi su\u1ea5t VietBank — C\u1eadp nh\u1eadt: 2026-...
+00:31:17 | INFO     | app.main                       | [049981a0-4152-4cac-badc-1c40c05febd6] User: Th\u1ebb tín d\u1ee5ng...
+00:31:17 | INFO     | app.core.orchestrator          | Processing message from session 049981a0-4152-4cac-badc-1c40c05febd6: Th\u1ebb tín d\u1ee5ng...
+00:31:17 | INFO     | app.core.intent_classifier     | Intent classified by keywords: tu_van_the_tin_dung
+00:31:17 | INFO     | app.core.orchestrator          | Detected intent: tu_van_the_tin_dung
+00:31:20 | INFO     | httpx                          | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+00:31:22 | INFO     | httpx                          | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+00:31:43 | WARNING  | app.services.rag_service       | RAG response generation returned empty text
+00:31:43 | INFO     | app.main                       | [049981a0-4152-4cac-badc-1c40c05febd6] Bot (tu_van_the_tin_dung): D\u1ea1, theo thông tin trong the_tin_dung.md, anh/ch\u1ecb có th\u1ec3 tham kh\u1ea3o:
+
+H\u01af\u1edaNG D\u1eaaN S...
+00:32:16 | INFO     | app.main                       | [049981a0-4152-4cac-badc-1c40c05febd6] User: trâu tv là ai...
+00:32:16 | INFO     | app.core.orchestrator          | Processing message from session 049981a0-4152-4cac-badc-1c40c05febd6: trâu tv là ai...
+00:32:18 | INFO     | httpx                          | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+00:32:35 | INFO     | app.core.intent_classifier     | Intent classified by LLM: chitchat
+00:32:35 | INFO     | app.core.orchestrator          | Detected intent: chitchat
+00:32:36 | INFO     | httpx                          | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+00:32:57 | WARNING  | app.core.response_generator    | Chitchat response generation returned empty text; using fallback
+00:32:57 | INFO     | app.main                       | [049981a0-4152-4cac-badc-1c40c05febd6] Bot (chitchat): Xin chào anh/ch\u1ecb! \U0001f44b Em là tr\u1ee3 lý \u1ea3o VietBank. Em có th\u1ec3 h\u1ed7 tr\u1ee3 anh/ch\u1ecb v\u1ec1 t\u1ef7 giá...
+00:33:26 | INFO     | app.main                       | [049981a0-4152-4cac-badc-1c40c05febd6] User: mày bi\u1ebft something là ai không ?...
+00:33:26 | INFO     | app.core.orchestrator          | Processing message from session 049981a0-4152-4cac-badc-1c40c05febd6: mày bi\u1ebft something là ai không ?...
+00:33:28 | INFO     | httpx                          | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+00:33:36 | INFO     | app.core.intent_classifier     | Intent classified by LLM: chitchat
+00:33:36 | INFO     | app.core.orchestrator          | Detected intent: chitchat
+00:33:37 | INFO     | httpx                          | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+00:33:58 | WARNING  | app.core.response_generator    | Chitchat response generation returned empty text; using fallback
+00:33:58 | INFO     | app.main                       | [049981a0-4152-4cac-badc-1c40c05febd6] Bot (chitchat): Xin chào anh/ch\u1ecb! \U0001f44b Em là tr\u1ee3 lý \u1ea3o VietBank. Em có th\u1ec3 h\u1ed7 tr\u1ee3 anh/ch\u1ecb v\u1ec1 t\u1ef7 giá...
+00:34:17 | INFO     | app.main                       | WebSocket disconnected: session=049981a0-4152-4cac-badc-1c40c05febd6
+INFO:     connection closed
+INFO:     ('127.0.0.1', 61682) - "WebSocket /ws/chat/ff0e8ca5-a4ba-47af-8f5b-6bc30917c180" [accepted]
+00:41:11 | INFO     | app.main                       | WebSocket connected: session=ff0e8ca5-a4ba-47af-8f5b-6bc30917c180
+INFO:     connection open
+00:41:23 | INFO     | app.main                       | [ff0e8ca5-a4ba-47af-8f5b-6bc30917c180] User: T\u1ef7 giá ngo\u1ea1i t\u1ec7...
+00:41:23 | INFO     | app.core.orchestrator          | Processing message from session ff0e8ca5-a4ba-47af-8f5b-6bc30917c180: T\u1ef7 giá ngo\u1ea1i t\u1ec7...
+00:41:23 | INFO     | app.core.context_manager       | Creating new session: ff0e8ca5-a4ba-47af-8f5b-6bc30917c180
+00:41:23 | INFO     | app.core.intent_classifier     | Intent classified by keywords: tra_cuu_ty_gia
+00:41:23 | INFO     | app.core.orchestrator          | Detected intent: tra_cuu_ty_gia
+00:41:23 | INFO     | app.services.exchange_rate_service | Fetching exchange rates from Vietcombank...
+00:41:23 | INFO     | httpx                          | HTTP Request: GET https://portal.vietcombank.com.vn/Usercontrols/TVPortal.TyGia/pXML.aspx?b=1 "HTTP/1.1 200 OK"
+00:41:23 | INFO     | app.services.exchange_rate_service | Fetched 20 exchange rates from Vietcombank
+00:41:32 | INFO     | httpx                          | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+00:41:52 | WARNING  | app.core.response_generator    | API response generation returned empty text; using raw data fallback
+00:41:52 | INFO     | app.main                       | [ff0e8ca5-a4ba-47af-8f5b-6bc30917c180] Bot (tra_cuu_ty_gia): D\u1ea1, em có d\u1eef li\u1ec7u cho anh/ch\u1ecb \u0111ây \u1ea1:
+
+\U0001f4ca T\u1ef7 giá ngo\u1ea1i t\u1ec7 Vietcombank — C\u1eadp nh\u1eadt: ...
+00:42:27 | INFO     | app.main                       | [ff0e8ca5-a4ba-47af-8f5b-6bc30917c180] User: M\u1edf tài kho\u1ea3n...
+00:42:27 | INFO     | app.core.orchestrator          | Processing message from session ff0e8ca5-a4ba-47af-8f5b-6bc30917c180: M\u1edf tài kho\u1ea3n...
+00:42:27 | INFO     | app.core.intent_classifier     | Intent classified by keywords: tu_van_mo_tai_khoan
+00:42:27 | INFO     | app.core.orchestrator          | Detected intent: tu_van_mo_tai_khoan
+00:42:35 | INFO     | httpx                          | HTTP Request: POST http://localhost:11434/api/embed "HTTP/1.1 200 OK"
+00:42:37 | INFO     | httpx                          | HTTP Request: POST http://localhost:11434/api/chat "HTTP/1.1 200 OK"
+00:42:58 | WARNING  | app.services.rag_service       | RAG response generation returned empty text
+00:42:58 | INFO     | app.main                       | [ff0e8ca5-a4ba-47af-8f5b-6bc30917c180] Bot (tu_van_mo_tai_khoan): D\u1ea1, theo thông tin trong mo_tai_khoan.md, anh/ch\u1ecb có th\u1ec3 tham kh\u1ea3o:
+
+H\u01af\u1edaNG D\u1eaaN M...
+00:43:51 | INFO     | app.main                       | WebSocket disconnected: session=ff0e8ca5-a4ba-47af-8f5b-6bc30917c180
+INFO:     connection closed

@@ -1,0 +1,39 @@
+INFO:     127.0.0.1:51522 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51526 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51530 - "POST /api/chat HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52650 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50463 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55572 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55574 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55574 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55578 - "GET /css/styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55578 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64844 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64844 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64848 - "GET /css/styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64848 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53451 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58261 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58268 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58268 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58272 - "GET /css/styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58272 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50641 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50641 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50645 - "GET /css/styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50645 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63465 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56458 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56458 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:54526 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61366 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61366 - "GET /css/styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61366 - "GET /js/app.js?v=20260605-1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61366 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:65380 - "GET /.well-known/appspecific/com.chrome.devtools.json HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57341 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53922 - "GET /api/health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54524 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54524 - "GET /css/styles.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54524 - "GET /js/app.js?v=20260605-1 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:54524 - "GET /favicon.ico HTTP/1.1" 404 Not Found
